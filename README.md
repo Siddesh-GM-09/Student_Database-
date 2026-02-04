@@ -1,68 +1,109 @@
-# Student Database Management System (C)
+# 🎓 Student Database Management System (C)
 
-A console-based Student Database Management System implemented in C using a singly linked list.  
-The project focuses on data structures, dynamic memory management, and file handling concepts.
+![Language](https://img.shields.io/badge/Language-C-blue)
+![Data%20Structure](https://img.shields.io/badge/Data%20Structure-Singly%20Linked%20List-orange)
+![File%20Handling](https://img.shields.io/badge/File%20Handling-CSV-green)
+![Project](https://img.shields.io/badge/Project-Completed-success)
 
-## Project Description
-This application manages student records using a linked list as the core data structure.  
-Each record typically contains roll number, name, and percentage.  
-The program supports common database-style operations and persists data using a CSV file.
+---
 
-## Key Features
-- Create (add) student records
-- Read (display) all records
-- Update (modify) records by roll number, name, or percentage
-- Delete records by roll number or name
-- Sort student records
-- Reverse the linked list
-- Save records to `student.csv` using file I/O
+## 📌 Project Overview
+A **console-based Student Database Management System** implemented in **C**, using a **singly linked list** as the core data structure.  
+The project emphasizes **data structures**, **dynamic memory management**, and **file handling**, simulating basic database-style operations.
 
-## Data Structure Used
-- **Singly Linked List**
-  - Dynamic memory allocation using `malloc`, `calloc`, and `free`
-  - Node-based traversal for insert, delete, modify, and search operations
+---
 
-## File Structure
-- `main.c` – Program entry point and menu handling
-- `header.h` – Structure definitions and function prototypes
-- `stud_add.c` – Add student record
-- `stud_show.c` – Display student records
-- `stud_del.c`, `delectRollno.c`, `delectName.c` – Delete operations
-- `stud_mod.c`, `modifyByRollno.c`, `modifyByName.c`, `modifyByPercentage.c` – Modify operations
-- `sortRecord.c` – Sorting logic
-- `reverseRecord.c` – Linked list reversal
-- `stud_save.c` – Save records to CSV
-- `student.csv` – Persistent storage file
+## ✨ Key Features
+- Add (Create) student records  
+- Display (Read) all records  
+- Modify (Update) records by:
+  - Roll number
+  - Name
+  - Percentage  
+- Delete records by:
+  - Roll number
+  - Name  
+- Sort student records  
+- Reverse the linked list  
+- Save records to a **CSV file** using file I/O  
 
-## Build Instructions
+---
 
-### Using Makefile
+## 🧠 Data Structure Used
+### 🔹 Singly Linked List
+- Dynamic memory allocation using `malloc`, `calloc`, and `free`
+- Node-based traversal for:
+  - Insert
+  - Delete
+  - Modify
+  - Search operations
+- Efficient handling of dynamic record sizes
+
+---
+
+## 🗂️ File Structure
+```
+STUDENT_DATABASE_SYSTEM/
+├── main.c                  # Program entry point & menu handling
+├── header.h                # Structure definitions & prototypes
+├── stud_add.c              # Add student record
+├── stud_show.c             # Display student records
+├── stud_del.c              # Delete record (common logic)
+├── delectRollno.c          # Delete by roll number
+├── delectName.c            # Delete by name
+├── stud_mod.c              # Modify record (common logic)
+├── modifyByRollno.c        # Modify by roll number
+├── modifyByName.c          # Modify by name
+├── modifyByPercentage.c    # Modify by percentage
+├── sortRecord.c            # Sorting logic
+├── reverseRecord.c         # Linked list reversal
+├── stud_save.c             # Save records to CSV
+├── student.csv             # Persistent storage
+├── README.md
+```
+
+---
+
+## 🛠️ Build Instructions
+
+### ▶️ Using Makefile
 ```bash
 make
 ```
 
-### Manual Compilation
+### ▶️ Manual Compilation
 ```bash
 gcc -std=c99 -Wall -Wextra -pedantic -o student main.c *.c
 ```
 
-## Run
+---
+
+## ▶️ Run the Program
 ```bash
 ./student
 ```
 
-## CSV Format
+---
+
+## 📄 CSV File Format
 ```csv
 rollno,name,percentage
 1,John,78.5
 2,Alice,92.0
 ```
 
-## Learning Outcomes
-- Strong understanding of linked lists
-- Hands-on experience with pointers and dynamic memory
-- Practical use of file handling in C
-- Modular programming and code organization
+---
 
-## Author
-Siddesh G M
+## 🎯 Learning Outcomes
+- Strong understanding of **linked lists**
+- Hands-on experience with **pointers & dynamic memory**
+- Practical use of **file handling (CSV persistence)**
+- Modular programming and clean code organization
+- Debugging and menu-driven application design
+
+---
+
+## 👤 Author
+**Siddesh G M**  
+Embedded & C Programmer  
+Data Structures | Linked Lists | File Handling
